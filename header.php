@@ -73,7 +73,7 @@
                             <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
                             <div class="menu-wrap">
                                 <nav class="menu-nav show">
-                                    <div class="logo"><a href="index.html"><img src="img/logo/logo.png" alt=""></a></div>
+                                    <div class="logo"><a href="index.php"><img src="img/logo/logo5.png" alt=""></a></div>
                                     <div class="navbar-wrap main-menu d-none d-lg-flex">
                                         <ul class="navigation">
                                             <li class="active menu-item-has-children"><a href="index.php">Home</a>
