@@ -103,6 +103,8 @@ $(".search-close").on('click',function () {
 /*=============================================
 	=    		 Main Slider		      =
 =============================================*/
+
+
 function mainSlider() {
 	var BasicSlider = $('.slider-active');
 	BasicSlider.on('init', function (e, slick) {
