@@ -1149,6 +1149,25 @@ label {
     filter: invert(45%) sepia(71%) saturate(6213%) hue-rotate(345deg) brightness(101%) contrast(88%);
 }
 
+
+/* slider background black left---------------------me */
+.single-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+    z-index: 0.1;
+}
+
+.single-slider {
+    position: relative;
+    z-index: 2;
+}
+/* slider background black left---------------------me */
+
 /* 7. Find */
 .find-wrap {
     display: flex;
