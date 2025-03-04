@@ -17,16 +17,16 @@
             <!-- slider-area -->
             <section class="slider-area">
                 <div class="slider-active">
-                    <div class="single-slider slider-bg d-flex align-items-center" data-background="img/slider/slider_bg01.jpg">
+                    <div class="single-slider slider-bg d-flex align-items-center" data-background="img/slider/s1.jpg">
                         <div class="container custom-container">
                             <div class="row">
                                 <div class="col-xl-5 col-lg-7 col-md-10">
                                     <div class="slider-content">
                                         <div class="slider-title">
-                                            <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Best Friend <span>with</span> Happy Time</h2>
+                                            <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Join Our<span>Mission</span>to Save Animals</h2>
                                         </div>
                                         <div class="slider-desc">
-                                            <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">Human Shampoo on Dogs After six days of delirat, the jury found Hernandez guilty of first-degree murder</p>
+                                            <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">AI-powered solutions for rescuing animals in distress.Together, we can make the world kinder.</p>
                                         </div>
                                         <a href="dog-list.html" class="btn" data-animation="fadeInUpBig" data-delay=".6s" data-duration="1.2s">View More <img src="img/icon/w_pawprint.png" alt=""></a>
                                     </div>
@@ -34,16 +34,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-slider slider-bg d-flex align-items-center" data-background="img/slider/slider_bg02.jpg">
+                    <div class="single-slider slider-bg d-flex align-items-center" data-background="img/slider/s2.jpg">
                         <div class="container custom-container">
                             <div class="row">
                                 <div class="col-xl-5 col-lg-7 col-md-10">
                                     <div class="slider-content">
                                         <div class="slider-title">
-                                            <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Best Friend <span>with</span> Happy Time</h2>
+                                            <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Support Strays <span>with</span>AI Innovation</h2>
                                         </div>
                                         <div class="slider-desc">
-                                            <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">Human Shampoo on Dogs After six days of delirat, the jury found Hernandez guilty of first-degree murder</p>
+                                            <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">Your compassion, our technology—saving lives together.Connect, assist, and create a safer future.</p>
                                         </div>
                                         <a href="dog-list.html" class="btn" data-animation="fadeInUpBig" data-delay=".6s" data-duration="1.2s">View More <img src="img/icon/w_pawprint.png" alt=""></a>
                                     </div>
@@ -851,6 +851,8 @@
         <script src="js/wow.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+
     </body>
 
 <!-- Mirrored from themebeyond.com/pre/petco-prev/petco-live/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2024 01:35:01 GMT -->
