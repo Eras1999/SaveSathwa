@@ -110,53 +110,8 @@
                                     <div class="header-action d-none d-md-block">
                                         <ul>
                                             <li class="header-search"><a href="#"><i class="flaticon-search"></i></a></li>
-                                            <li class="header-shop-cart"><a href="#"><i class="flaticon-shopping-bag"></i><span>2</span></a>
-                                                <ul class="minicart">
-                                                    <li class="d-flex align-items-start">
-                                                        <div class="cart-img">
-                                                            <a href="#"><img src="img/product/cart_p01.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="cart-content">
-                                                            <h4><a href="#">The King Charles Spaniel</a></h4>
-                                                            <div class="cart-price">
-                                                                <span class="new">$229.9</span>
-                                                                <span><del>$229.9</del></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="del-icon">
-                                                            <a href="#"><i class="far fa-trash-alt"></i></a>
-                                                        </div>
-                                                    </li>
-                                                    <li class="d-flex align-items-start">
-                                                        <div class="cart-img">
-                                                            <a href="#"><img src="img/product/cart_p02.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="cart-content">
-                                                            <h4><a href="#">The Labrador Retriever</a></h4>
-                                                            <div class="cart-price">
-                                                                <span class="new">$229.9</span>
-                                                                <span><del>$229.9</del></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="del-icon">
-                                                            <a href="#"><i class="far fa-trash-alt"></i></a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="total-price">
-                                                            <span class="f-left">Total:</span>
-                                                            <span class="f-right">$239.9</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="checkout-link">
-                                                            <a href="#">Shopping Cart</a>
-                                                            <a class="black-color" href="#">Checkout</a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="header-btn"><a href="adoption.html" class="btn">Adopt Here <img src="img/icon/w_pawprint.png" alt=""></a></li>
+                                            
+                                            <li class="header-btn"><a href="adoption.html" class="btn">Login <img src="img/icon/w_pawprint.png" alt=""></a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -165,7 +120,10 @@
                             <div class="mobile-menu">
                                 <nav class="menu-box">
                                     <div class="close-btn"><i class="fas fa-times"></i></div>
-                                    <div class="nav-logo"><a href="index.html"><img src="img/logo/logo.png" alt="" title=""></a>
+                                    <div class="nav-logo"><a href="index.php"><img src="img/logo/logo.png" alt="" title=""></a>
+                                    </div>
+                                     <!-- Login Button (Added after the logo) -->
+                                    <div class="mobile-login-btn"><a href="adoption.html" class="btn">Login<img src="img/icon/w_pawprint.png" alt=""></a>
                                     </div>
                                     <div class="menu-outer">
                                         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
