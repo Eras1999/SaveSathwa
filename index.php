@@ -16,45 +16,46 @@
 
             <!-- slider-area -->
             <section class="slider-area">
-                <div class="slider-active">
-                    <div class="single-slider slider-bg d-flex align-items-center" data-background="img/slider/s1.jpg">
-                        <div class="container custom-container">
-                            <div class="row">
-                                <div class="col-xl-5 col-lg-7 col-md-10">
-                                    <div class="slider-content">
-                                        <div class="slider-title">
-                                            <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Join Our<span>Mission</span>to Save Animals</h2>
-                                        </div>
-                                        <div class="slider-desc">
-                                            <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">AI-powered solutions for rescuing animals in distress.Together, we can make the world kinder.</p>
-                                        </div>
-                                        <a href="dog-list.html" class="btn" data-animation="fadeInUpBig" data-delay=".6s" data-duration="1.2s">View More <img src="img/icon/w_pawprint.png" alt=""></a>
-                                    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide single-slider slider-bg d-flex align-items-center" style="background-image: url('img/slider/s1.jpg');">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-10">
+                            <div class="slider-content">
+                                <div class="slider-title">
+                                    <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Join Our<span>Mission</span>to Save Animals</h2>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slider slider-bg d-flex align-items-center" data-background="img/slider/s2.jpg">
-                        <div class="container custom-container">
-                            <div class="row">
-                                <div class="col-xl-5 col-lg-7 col-md-10">
-                                    <div class="slider-content">
-                                        <div class="slider-title">
-                                            <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Support Strays <span>with</span>AI Innovation</h2>
-                                        </div>
-                                        <div class="slider-desc">
-                                            <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">Your compassion, our technology—saving lives together.Connect, assist, and create a safer future.</p>
-                                        </div>
-                                        <a href="dog-list.html" class="btn" data-animation="fadeInUpBig" data-delay=".6s" data-duration="1.2s">View More <img src="img/icon/w_pawprint.png" alt=""></a>
-                                    </div>
+                                <div class="slider-desc">
+                                    <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">AI-powered solutions for rescuing animals in distress. Together, we can make the world kinder.</p>
                                 </div>
+                                <a href="dog-list.html" class="btn" data-animation="fadeInUpBig" data-delay=".6s" data-duration="1.2s">View More <img src="img/icon/w_pawprint.png" alt=""></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider-shape"><img src="img/slider/slider_shape01.png" alt=""></div>
-                <div class="slider-shape shape-two"><img src="img/slider/slider_shape02.png" alt=""></div>
-            </section>
+            </div>
+            <div class="swiper-slide single-slider slider-bg d-flex align-items-center" style="background-image: url('img/slider/s2.jpg');">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-10">
+                            <div class="slider-content">
+                                <div class="slider-title">
+                                    <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Support Strays <span>with</span> AI Innovation</h2>
+                                </div>
+                                <div class="slider-desc">
+                                    <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">Your compassion, our technology—saving lives together. Connect, assist, and create a safer future.</p>
+                                </div>
+                                <a href="dog-list.html" class="btn" data-animation="fadeInUpBig" data-delay=".6s" data-duration="1.2s">View More <img src="img/icon/w_pawprint.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
             <!-- slider-area-end -->
 
             <!-- find-area -->
@@ -851,6 +852,11 @@
         <script src="js/wow.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/slider.js"></script><!-- slider to use-->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   <!-- slider to use-->
+   
+
 
 
     </body>
