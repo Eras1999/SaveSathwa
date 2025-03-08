@@ -206,7 +206,7 @@ label {
 .btn {
     -moz-user-select: none;
     user-select: none;
-    background: #f04336 none repeat scroll 0 0;
+    background: #46ac0b none repeat scroll 0 0;
     border: medium none;
     border-radius: 3px;
     color: #fff;
@@ -273,7 +273,7 @@ label {
 	color: #fff;
 	text-align: center;
 	cursor: pointer;
-	background: #f04336;
+	background: #46ac0b;
 	transition: 1s ease;
 	border: none;
     opacity: 0;
@@ -412,7 +412,7 @@ label {
     transition: all 0.3s ease-out 0s;
     top: 31px;
     margin: 0 auto;
-    background: #f04336;
+    background: #46ac0b;
     border-radius: 10px 10px 20px 20px;
     opacity: 0;
     z-index: -1;
@@ -558,7 +558,7 @@ label {
 	color: #676565;
 }
 .minicart .del-icon > a:hover {
-	color: #f04336;
+	color: #46ac0b;
 }
 .total-price {
     border-top: 1px solid #e8e8e8;
@@ -574,7 +574,7 @@ label {
 	margin-bottom: 0;
 }
 .header-shop-cart .minicart .checkout-link a {
-	background: #f04336;
+	background: #46ac0b;
 	color: #fff;
 	display: block;
 	font-weight: 500;
@@ -648,7 +648,7 @@ label {
     width: 0;
     height: 2px;
     top: 20px;
-	background: #f04336;
+	background: #46ac0b;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -662,7 +662,7 @@ label {
     padding-left: 45px;
 }
 .navbar-wrap > ul > li .submenu li.active > a {
-	color: #f04336;
+	color: #46ac0b;
 }
 .navbar-wrap ul li:hover > .submenu {
 	opacity: 1;
@@ -903,7 +903,7 @@ label {
     font-size: 30px;
     cursor: pointer;
     line-height: 1;
-    color: #f04336;
+    color: #46ac0b;
     display: none;
     margin-top: 3px;
 }
@@ -941,7 +941,7 @@ label {
 .search-form input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #f04336;
+    border-bottom: 1px solid #46ac0b;
     padding: 10px 50px 20px;
     text-align: center;
     font-weight: 500;
@@ -958,7 +958,7 @@ label {
     background: transparent;
     border: 0;
     font-size: 25px;
-    color: #f04336;
+    color: #46ac0b;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -967,7 +967,7 @@ label {
 	top: 5%;
 	right: 5%;
 	font-size: 30px;
-	color: #f04336;
+	color: #46ac0b;
 	cursor: pointer;
 }
 
@@ -988,7 +988,7 @@ label {
     line-height: 1.1;
     clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
     padding: 13px 40px 13px 20px;
-    background: #f04336;
+    background: #46ac0b;
     border-radius: 15px 15px 40px 15px;
 }
 .breadcrumb-content .breadcrumb {
@@ -1009,14 +1009,14 @@ label {
     font-size: 16px;
 }
 .breadcrumb-content .breadcrumb li a {
-    color: #f04336;
+    color: #46ac0b;
 }
 .breadcrumb-content .breadcrumb-item+.breadcrumb-item {
     padding-left: 10px;
 }
 .breadcrumb-content .breadcrumb-item+.breadcrumb-item::before {
     padding-right: 10px;
-    color: #f04336;
+    color: #46ac0b;
     content: "|";
 }
 
