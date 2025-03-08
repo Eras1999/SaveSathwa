@@ -1212,7 +1212,7 @@ label {
     align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-    background: #f04336;
+    background: #46ac0b;
     position: relative;
     margin-left: 80px;
 	background-image: url(../img/images/find_shape.png);
@@ -1227,14 +1227,14 @@ label {
     width: 85px;
     height: 100%;
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 100% 50%, 0% 0%);
-    background: #f04336;
+    background: #46ac0b;
     z-index: 1;
 }
 .find-wrap .find-category ul li {
     min-height: 158px;
     display: flex;
     align-items: center;
-    border-right: 3px solid #e73a2d;
+    border-right: 3px solid #46ac0b;
     padding: 40px 46px;
 }
 .find-wrap .find-category ul li:nth-child(3n+3) {
@@ -1292,7 +1292,7 @@ label {
 .other-find .dropdown .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #f04336;
+    background-color: #46ac0b;
 }
 
 /* 8. Counter */
@@ -1300,7 +1300,7 @@ label {
     font-size: 24px;
     font-weight: 800;
     line-height: 1;
-    color: #f04336;
+    color: #46ac0b;
     margin-bottom: 18px;
 }
 .counter-title .title {
@@ -1344,7 +1344,7 @@ label {
     line-height: 26px;
 }
 .counter-item:hover .count {
-	color: #f04336;
+	color: #46ac0b;
 }
 
 /* 9. Adoption */
@@ -1379,7 +1379,7 @@ label {
     line-height: 1.2;
 }
 .adoption-content .title span {
-	color: #f04336;
+	color: #46ac0b;
 }
 .adoption-content p {
     line-height: 28px;
