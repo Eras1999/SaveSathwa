@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         fadeEffect: {
             crossFade: true, // Ensures smooth fading between slides
         },
-        speed: 2000, // Slows down the transition to 2 seconds
+        speed: 2500, // Slows down the transition to 2 seconds
        
     });
 });
