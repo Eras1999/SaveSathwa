@@ -52,6 +52,23 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-slide single-slider slider-bg d-flex align-items-center" style="background-image: url('img/slider/s3.jpg');">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-10">
+                            <div class="slider-content">
+                                <div class="slider-title">
+                                    <h2 class="title" data-animation="fadeInUpBig" data-delay=".2s" data-duration="1.2s">Support Strays <span>with</span> AI Innovation</h2>
+                                </div>
+                                <div class="slider-desc">
+                                    <p class="desc" data-animation="fadeInUpBig" data-delay=".4s" data-duration="1.2s">Your compassion, our technology—saving lives together. Connect, assist, and create a safer future.</p>
+                                </div>
+                                <a href="dog-list.html" class="btn" data-animation="fadeInUpBig" data-delay=".6s" data-duration="1.2s">View More <img src="img/icon/w_pawprint.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
