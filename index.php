@@ -89,8 +89,7 @@
                                     <div class="find-category">
                                         <ul>
                                             <li><a href="shop.html"><i class="flaticon-dog"></i> Find Your Dog</a></li>
-                                            <li><a href="shop.html"><i class="flaticon-happy"></i> Find Your Cat</a></li>
-                                            <li><a href="shop.html"><i class="flaticon-dove"></i> Find Your Birds</a></li>
+                                            <li><a href="shop.html"><i class="flaticon-happy"></i> Find Your Cat</a></li>                                      
                                         </ul>
                                     </div>
                                     <div class="other-find">
@@ -100,8 +99,7 @@
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="shop.html">Find Your Dog</a>
-                                                <a class="dropdown-item" href="shop.html">Find Your Cat</a>
-                                                <a class="dropdown-item" href="shop.html">Find Your Birds</a>
+                                                <a class="dropdown-item" href="shop.html">Find Your Cat</a>                                              
                                             </div>
                                         </div>
                                     </div>
