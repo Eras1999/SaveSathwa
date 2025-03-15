@@ -158,7 +158,7 @@
                     <div class="row align-items-center align-items-xl-end justify-content-center">
                         <div class="col-xl-7 col-lg-6 col-md-10 order-0 order-lg-2">
                             <div class="adoption-img">
-                                <img src="img/images/adoption_img.jpg" alt="">
+                                <img src="img/images/index/i1.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-6">
