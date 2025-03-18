@@ -87,14 +87,14 @@
                                                 </ul>
                                             no need -->
                                             </li>
-                                            <li><a href="dog-list.php">Dog List</a></li>
+                                            <li><a href="dog-list.php">About Us</a></li>
                                             <li class="menu-item-has-children"><a href="shop.html">Shop</a>
                                                 <ul class="submenu">
                                                     <li><a href="shop.html">Our Shop</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="adoption.html">Adoption</a></li>
+                                            <li><a href="adoption.html">Snakes</a></li>
                                             <li class="menu-item-has-children"><a href="breeder.html">Breeder</a>
                                                 <ul class="submenu">
                                                     <li><a href="breeder.html">Our Breeder</a></li>
