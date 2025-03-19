@@ -6,15 +6,15 @@
                         <div class="col-3">
                             <div class="footer-widget">
                                 <div class="f-logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" alt=""></a>
+                                    <a href="index.php"><img src="img/logo/logo5.png" alt=""></a>
                                 </div>
                                 <div class="footer-text">
-                                    <p>The best overall dog DNA test Embark Breed & Health Kit (view at Chewy) which provides overall dog you.</p>
+                                    <p>"Saving one animal won't change the world, but for that one animal, the world changes forever. Join our community-powered platform to make a difference today."</p>
                                 </div>
                                 <div class="footer-contact">
                                     <div class="icon"><i class="fas fa-headphones"></i></div>
                                     <div class="content">
-                                        <h4 class="title"><a href="tel:0987654321">747-800-9880</a></h4>
+                                        <h4 class="title"><a href="tel:0987654321">011 1234567</a></h4>
                                         <span>Call Now</span>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="copyright-text">
-                                <p>Copyright &copy; 2021 Petco. All Rights Reserved.</p>
+                                <p>Copyright &copy; 2025 SaveSathwa.All Rights Reserved.</p>
                             </div>
                         </div>
                         <div class="col-md-4 d-none d-md-block">
