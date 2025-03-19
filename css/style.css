@@ -3907,8 +3907,8 @@ label {
     width: 35px;
     height: 35px;
     flex: 0 0 35px;
-    background: #f04336;
-    color: #fff;
+    background: #46ac0b;
+    color: #000000;
     text-align: center;
     line-height: 35px;
     font-size: 18px;
@@ -3923,13 +3923,13 @@ label {
 }
 .footer-contact .content .title > a:hover,
 .footer-social ul li a:hover {
-    color: #f04336;
+    color: #46ac0b;
 }
 .footer-contact .content > span {
     display: block;
     font-size: 12px;
     text-transform: uppercase;
-    color: #f04336;
+    color: #46ac0b;
     font-weight: 900;
     font-family: 'Nunito', sans-serif;
 }
@@ -3964,7 +3964,7 @@ label {
     color: #676666;
 }
 .footer-widget .fw-link ul li a:hover {
-    color: #f04336;
+    color: #46ac0b;
     padding-left: 5px;
 }
 .fw-insta ul {
