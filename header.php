@@ -88,14 +88,14 @@
                                             no need -->
                                             </li>
                                             <li><a href="dog-list.php">About Us</a></li>
-                                            <li class="menu-item-has-children"><a href="shop.html">Find</a>
+                                            <li class="menu-item-has-children"><a href="shop.html">Rescue Finder</a>
                                                 <ul class="submenu">
                                                     <li><a href="shop.html">Reporting</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="adoption.html">AI Snakes</a></li>
-                                            <li class="menu-item-has-children"><a href="breeder.html">Breeder</a>
+                                            <li><a href="adoption.html">Report Case</a></li>
+                                            <li class="menu-item-has-children"><a href="breeder.html">SnakeID</a>
                                                 <ul class="submenu">
                                                     <li><a href="breeder.html">Our Breeder</a></li>
                                                     <li><a href="breeder-details.html">Breeder Details</a></li>
