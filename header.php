@@ -88,13 +88,13 @@
                                             no need -->
                                             </li>
                                             <li><a href="dog-list.php">About Us</a></li>
-                                            <li class="menu-item-has-children"><a href="shop.html">Shop</a>
+                                            <li class="menu-item-has-children"><a href="shop.html">Find</a>
                                                 <ul class="submenu">
-                                                    <li><a href="shop.html">Our Shop</a></li>
+                                                    <li><a href="shop.html">Reporting</a></li>
                                                     <li><a href="shop-details.html">Shop Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="adoption.html">Snakes</a></li>
+                                            <li><a href="adoption.html">AI Snakes</a></li>
                                             <li class="menu-item-has-children"><a href="breeder.html">Breeder</a>
                                                 <ul class="submenu">
                                                     <li><a href="breeder.html">Our Breeder</a></li>
