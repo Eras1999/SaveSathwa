@@ -39,7 +39,7 @@
                                         <li><a href="contact.html">Return Policy</a></li>
                                         <li><a href="contact.html">IP Policy</a></li>
                                         <li><a href="contact.html">Grievance Redressal Policy</a></li>
-                                        <li><a href="contact.html">Our Conditions</a></li>
+                                        <li><a href="contact.html">FAQ</a></li>
                                     </ul>
                                 </div>
                             </div>
