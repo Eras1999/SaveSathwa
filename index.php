@@ -118,33 +118,33 @@
                         <div class="col-xl-6 col-lg-8">
                             <div class="counter-title text-center mb-65">
                                 <h6 class="sub-title">Why Choose Us?</h6>
-                                <h2 class="title">Best Service to Breeds Your Loved Dog Explore</h2>
+                                <h2 class="title">"Connecting Compassionate Hearts with Animals in Distress"</h2>
                             </div>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="counter-item">
-                                <h2 class="count"><span class="odometer" data-count="73"></span>%</h2>
-                                <p>dogs are first bred</p>
+                                <h2 class="count"><span class="odometer" data-count="80"></span>%</h2>
+                                <p>SUCCESSFUL RESCUES</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="counter-item">
-                                <h2 class="count"><span class="odometer" data-count="259"></span>+</h2>
-                                <p>Most dogs are first</p>
+                                <h2 class="count"><span class="odometer" data-count="150"></span>+</h2>
+                                <p>DAILY REPORTS</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="counter-item">
-                                <h2 class="count"><span class="odometer" data-count="39"></span>K</h2>
-                                <p>Dog Breeding</p>
+                                <h2 class="count"><span class="odometer" data-count="20"></span>+</h2>
+                                <p>AI IDENTIFIED SPECIES</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="counter-item">
-                                <h2 class="count"><span class="odometer" data-count="45"></span>+</h2>
-                                <p>Years Of History</p>
+                                <h2 class="count"><span class="odometer" data-count="90"></span>%</h2>
+                                <p>DATA ACCURACY (%)</p>
                             </div>
                         </div>
                     </div>
