@@ -70,55 +70,62 @@
                 </div>
             </div>
             <div id="sticky-header" class="menu-area">
-                <div class="container custom-container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
-                            <div class="menu-wrap">
-                                <nav class="menu-nav show">
-                                    <div class="logo"><a href="index.php"><img src="img/logo/logo5.png" alt=""></a></div>
-                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
-                                        <ul class="navigation">
-                                            <li class="active menu-item-has-children"><a href="index.php">Home</a>
-                                            <!-- no need 
-                                                <ul class="submenu">
-                                                    <li class="active"><a href="index.html">Home One</a></li>
-                                                    <li><a href="index-2.html">Home Two</a></li>                                                   
-                                                </ul>
-                                            no need -->
-                                            </li>
-                                            <li><a href="dog-list.php">About Us</a></li>
-                                            <li class="menu-item-has-children"><a href="shop.html">Rescue Finder</a>
-                                                <ul class="submenu">
-                                                    <li><a href="shop.html">Reporting</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="adoption.html">Report Case</a></li>
-                                            <li class="menu-item-has-children"><a href="breeder.html">SnakeID</a>
-                                                <ul class="submenu">
-                                                    <li><a href="breeder.html">Our Breeder</a></li>
-                                                    <li><a href="breeder-details.html">Breeder Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children"><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Our Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">contacts</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="header-action d-none d-md-block">
-                                        <ul>
-                                            <li class="header-search"><a href="#"><i class="flaticon-search"></i></a></li>
-                                            
-                                            <li class="header-btn"><a href="login.php" class="btn">Login <img src="img/icon/w_pawprint.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav show">
+                                <div class="logo"><a href="index.php"><img src="img/logo/logo5.png" alt=""></a></div>
+                                <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                    <?php
+                                    // Get the current page filename
+                                    $current_page = basename($_SERVER['PHP_SELF']);
+                                    ?>
+                                    <ul class="navigation">
+                                        <li class="<?php echo ($current_page == 'index.php') ? 'active' : ''; ?> menu-item-has-children">
+                                            <a href="index.php">Home</a>
+                                        </li>
+                                        <li class="<?php echo ($current_page == 'about_us.php') ? 'active' : ''; ?>">
+                                            <a href="about_us.php">About Us</a>
+                                        </li>
+                                        <li class="<?php echo ($current_page == 'shop.html') ? 'active' : ''; ?> menu-item-has-children">
+                                            <a href="shop.html">Rescue Finder</a>
+                                            <ul class="submenu">
+                                                <li><a href="shop.html">Reporting</a></li>
+                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="<?php echo ($current_page == 'adoption.html') ? 'active' : ''; ?>">
+                                            <a href="adoption.html">Report Case</a>
+                                        </li>
+                                        <li class="<?php echo ($current_page == 'breeder.html') ? 'active' : ''; ?> menu-item-has-children">
+                                            <a href="breeder.html">SnakeID</a>
+                                            <ul class="submenu">
+                                                <li><a href="breeder.html">Our Breeder</a></li>
+                                                <li><a href="breeder-details.html">Breeder Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="<?php echo ($current_page == 'blog.html') ? 'active' : ''; ?> menu-item-has-children">
+                                            <a href="blog.html">Blog</a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Our Blog</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="<?php echo ($current_page == 'contact.html') ? 'active' : ''; ?>">
+                                            <a href="contact.html">Contacts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-action d-none d-md-block">
+                                    <ul>
+                                        <li class="header-search"><a href="#"><i class="flaticon-search"></i></a></li>
+                                        <li class="header-btn"><a href="login.php" class="btn">Login <img src="img/icon/w_pawprint.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
                             <!-- Mobile Menu  -->
                             <div class="mobile-menu">
                                 <nav class="menu-box">

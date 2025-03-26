@@ -3,11 +3,7 @@
     
 <!-- Mirrored from themebeyond.com/pre/petco-prev/petco-live/dog-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2024 01:35:51 GMT -->
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Petco - Pet Breeder & Adoption HTML Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
 
         <?php
         // Include the header
