@@ -114,7 +114,7 @@
                                             </ul>
                                         </li>
                                         <li class="<?php echo ($current_page == 'contact.html') ? 'active' : ''; ?>">
-                                            <a href="contact.html">Contacts</a>
+                                            <a href="contacts.php">Contacts</a>
                                         </li>
                                     </ul>
                                 </div>
