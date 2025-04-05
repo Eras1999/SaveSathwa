@@ -50,7 +50,7 @@
                                     <h2 class="title">Let's Talk Question<span>.</span></h2>
                                 </div>
                                 <div class="contact-wrap-content">
-                                    <p>The domestic  is a doiated dendant of the wolf. The dog derived from an ancient, extinct wolf, and the modern grey.</p>
+                                    <p>The domestic  is a doiated dendant of the wolf. .</p>
                                     <form action="#" class="contact-form">
                                         <div class="form-grp">
                                             <label for="name">Your Name <span>*</span></label>
