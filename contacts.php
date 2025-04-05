@@ -82,13 +82,13 @@
                                             <li>
                                                 <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                                                 <div class="content">
-                                                    <p>W84 New Park Lan, New York, NY 4586 United States</p>
+                                                    <p>Srilanka </p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="icon"><i class="fas fa-phone-alt"></i></div>
                                                 <div class="content">
-                                                    <p>+9 (256) 254 9568</p>
+                                                    <p>07022274222</p>
                                                 </div>
                                             </li>
                                             <li>
