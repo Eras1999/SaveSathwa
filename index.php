@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit();
-}
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -12,7 +6,6 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaveSathwa | AI-Powered Animal Rescue & Assistance Platform</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo5.png">
-    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -27,10 +20,7 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 <body>
     <?php include 'header.php'; ?>
-
-    <!-- main-area -->
     <main>
-        <!-- slider-area -->
         <section class="slider-area">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -88,9 +78,6 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </section>
-        <!-- slider-area-end -->
-
-        <!-- find-area -->
         <div class="find-area">
             <div class="container custom-container">
                 <div class="row">
@@ -124,9 +111,6 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </div>
-        <!-- find-area-end -->
-
-        <!-- counter-area -->
         <section class="counter-area counter-bg" data-background="img/bg/counter_bg.jpg">
             <div class="container">
                 <div class="row justify-content-center">
@@ -165,9 +149,6 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </section>
-        <!-- counter-area-end -->
-
-        <!-- adoption-area -->
         <section class="adoption-area">
             <div class="container">
                 <div class="row align-items-center align-items-xl-end justify-content-center">
@@ -187,9 +168,6 @@ if (!isset($_SESSION['user_id'])) {
             </div>
             <div class="adoption-shape"><img src="img/images/adoption_shape.png" alt=""></div>
         </section>
-        <!-- adoption-area-end -->
-
-        <!-- breeds-services -->
         <section class="breeds-services pt-110 pb-110">
             <div class="container">
                 <div class="row justify-content-center">
@@ -252,9 +230,6 @@ if (!isset($_SESSION['user_id'])) {
             <div class="breed-services-shape"><img src="img/images/breed_services_shape01.png" alt=""></div>
             <div class="breed-services-shape shape-two"><img src="img/images/breed_services_shape02.png" alt=""></div>
         </section>
-        <!-- breeds-services-end -->
-
-        <!-- faq-area -->
         <section class="faq-area faq-bg">
             <div class="container">
                 <div class="row align-items-center">
@@ -324,9 +299,6 @@ if (!isset($_SESSION['user_id'])) {
             </div>
             <div class="faq-shape"><img src="img/images/faq_shape.png" alt=""></div>
         </section>
-        <!-- faq-area-end -->
-
-        <!-- brand-area -->
         <div class="brand-area pt-80 pb-80">
             <div class="container">
                 <div class="row brand-active">
@@ -368,9 +340,6 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </div>
-        <!-- brand-area-end -->
-
-        <!-- adoption-shop-area -->
         <section class="adoption-shop-area">
             <div class="container">
                 <div class="row justify-content-center">
@@ -379,7 +348,8 @@ if (!isset($_SESSION['user_id'])) {
                             <div class="section-icon"><img src="img/icon/pawprint.png" alt=""></div>
                             <h5 class="sub-title">Meet the animals</h5>
                             <h2 class="title">Puppies Waiting for Adoption</h2>
-                            <p>The best overall dog DNA test is Embark Breed & Health Kit (view at Chewy), which provides you with a breed brwn and information Most dogs</p>
+                            <p>The best overall dog DNA test is Embark Breed & Health Kit (view at Chewy), which provides you with a
+                                breed brwn and information Most dogs</p>
                         </div>
                     </div>
                 </div>
@@ -561,9 +531,6 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </section>
-        <!-- adoption-shop-area-end -->
-
-        <!-- testimonial-area -->
         <section class="testimonial-area testimonial-bg">
             <div class="container">
                 <div class="row justify-content-center">
@@ -572,7 +539,8 @@ if (!isset($_SESSION['user_id'])) {
                             <div class="section-icon"><img src="img/icon/pawprint.png" alt=""></div>
                             <h5 class="sub-title">Testimonials</h5>
                             <h2 class="title">Our Happy Customers</h2>
-                            <p>The best overall dog DNA test is Embark Breed & Health Kit (view at Chewy), which provides you with a breed brwn and information Most dogs</p>
+                            <p>The best overall dog DNA test is Embark Breed & Health Kit (view at Chewy), which provides you with a
+                                breed brwn and information Most dogs</p>
                         </div>
                     </div>
                 </div>
@@ -636,9 +604,6 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </section>
-        <!-- testimonial-area-end -->
-
-        <!-- blog-area -->
         <section class="blog-area pt-110 pb-60">
             <div class="container">
                 <div class="row justify-content-center">
@@ -647,7 +612,8 @@ if (!isset($_SESSION['user_id'])) {
                             <div class="section-icon"><img src="img/icon/pawprint.png" alt=""></div>
                             <h5 class="sub-title">Our News</h5>
                             <h2 class="title">Latest News Update</h2>
-                            <p>The best overall dog DNA test is Embark Breed & Health Kit (view at Chewy), which provides you with a breed brwn and information Most dogs</p>
+                            <p>The best overall dog DNA test is Embark Breed & Health Kit (view at Chewy), which provides you with a
+                                breed brwn and information Most dogs</p>
                         </div>
                     </div>
                 </div>
@@ -718,13 +684,8 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </section>
-        <!-- blog-area-end -->
-
-        <!-- newsletter-area -->
         <div class="newsletter-area pb-110">
             <div class="container">
-                triumphs
-
                 <div class="row">
                     <div class="col-12">
                         <div class="newsletter-wrap">
@@ -745,13 +706,8 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </div>
-        <!-- newsletter-area-end -->
     </main>
-    <!-- main-area-end -->
-
     <?php include 'footer.php'; ?>
-
-    <!-- JS here -->
     <script src="js/vendor/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>

@@ -684,6 +684,115 @@ label {
 	border-radius: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-action .header-user .user-profile {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #007bff;
+    transition: background 0.3s;
+}
+.header-action .header-user .user-profile:hover {
+    background: #0056b3;
+}
+.header-action .header-user .user-name {
+    margin-right: 8px;
+}
+.header-action .header-user .fa-user-circle {
+    font-size: 20px;
+}
+.mobile-user-profile .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.mobile-user-profile .btn span {
+    margin-right: 8px;
+}
+.mobile-user-profile .btn i {
+    font-size: 20px;
+}
+.profile-area {
+    background: #f8f9fa;
+}
+.profile-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile-icon i {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.profile-card .title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.profile-card .email {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.profile-actions .btn {
+    background: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.profile-actions .btn:hover {
+    background: #c82333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 3. Mobile-menu */
 .nav-outer .mobile-nav-toggler {
 	position: relative;
