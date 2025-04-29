@@ -18,7 +18,7 @@
         }
 
         body {
-            background-image: url('/savesathwa/img/login/l1.jpg');
+            background-image: url('/savesathwa/img/register/s1.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -123,7 +123,7 @@
         </div>
         
         <div class="footer text-center p-4 border-t border-gray-200">
-            <p class="text-sm">Already have an account? <a href="index.html" class="text-indigo-600 hover:underline">Sign In</a></p>
+            <p class="text-sm">Already have an account? <a href="login.php" class="text-indigo-600 hover:underline">Sign In</a></p>
         </div>
     </div>
 </body>

@@ -52,6 +52,13 @@
             margin-right: 2rem;
         }
 
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+        }
+
         @media (max-width: 640px) {
             body {
                 justify-content: center;
@@ -94,6 +101,7 @@
                 <div class="form-group mb-5">
                     <label for="password" class="block text-sm font-medium text-gray-600 mb-2">Password</label>
                     <input type="password" id="password" name="password" class="w-full p-3 border border-gray-300 rounded-md text-sm focus:border-indigo-500 focus:outline-none" placeholder="Enter your password" required>
+                    <a href="forgot_password.php" class="forgot-password text-indigo-600 hover:underline">Forgot Password?</a>
                 </div>
                 
                 <button type="submit" class="w-full p-3 bg-indigo-600 text-white rounded-md text-base font-medium hover:bg-indigo-700 transition duration-300">Sign In</button>
