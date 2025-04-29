@@ -1,5 +1,30 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
+
+
+
+<?php
+session_start();
+if (isset($_SESSION['user_id'])) {
+    header("Location: dashboard.php");
+    exit();
+} else {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
     
 <!-- Mirrored from themebeyond.com/pre/petco-prev/petco-live/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2024 01:34:34 GMT -->
 
