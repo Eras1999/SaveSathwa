@@ -706,8 +706,9 @@ label {
     display: flex;
     align-items: center;
     color: #fff;
-    font-weight: 500;
-    padding: 10px 15px;
+    font-weight: 200;
+    font-size: 12px; /* Reduced font size */
+    padding: 6px 10px; /* Reduced padding for a smaller button */
     border-radius: 5px;
     background: #007bff;
     transition: background 0.3s;
@@ -716,10 +717,10 @@ label {
     background: #0056b3;
 }
 .header-action .header-user .user-name {
-    margin-right: 8px;
+    margin-right: 6px; /* Slightly reduced margin */
 }
 .header-action .header-user .fa-user-circle {
-    font-size: 20px;
+    font-size: 14px; /* Slightly smaller icon */
 }
 .mobile-user-profile .btn {
     display: flex;
@@ -727,15 +728,16 @@ label {
     justify-content: center;
     background: #007bff;
     color: #fff;
-    padding: 10px;
+    font-size: 12px; /* Reduced font size */
+    padding: 6px 10px; /* Reduced padding for a smaller button */
     border-radius: 5px;
     margin: 10px 0;
 }
 .mobile-user-profile .btn span {
-    margin-right: 8px;
+    margin-right: 6px; /* Slightly reduced margin */
 }
 .mobile-user-profile .btn i {
-    font-size: 20px;
+    font-size: 16px; /* Slightly smaller icon */
 }
 .profile-area {
     background: #f8f9fa;
@@ -769,7 +771,6 @@ label {
 .profile-actions .btn:hover {
     background: #c82333;
 }
-
 
 
 
