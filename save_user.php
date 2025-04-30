@@ -1,41 +1,69 @@
 <?php
-// Connect to your database
-$host = "localhost";
-$username = "root"; // your phpmyadmin username
-$password = "";     // your phpmyadmin password
-$database = "savesathwa";
+header('Content-Type: application/json');
 
-$conn = new mysqli($host, $username, $password, $database);
+// Database connection
+$servername = "localhost";
+$username = "root"; // Replace with your MySQL username
+$password = ""; // Replace with your MySQL password
+$dbname = "savesathwa"; // Replace with your database name
 
-if ($conn->connect_error) {
-    die("Database connection failed: " . $conn->connect_error);
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    echo json_encode(['success' => false, 'message' => 'Database connection failed: ' . $e->getMessage()]);
+    exit;
 }
 
-// Get JSON data from fetch
-$data = json_decode(file_get_contents("php://input"), true);
+// Get user data from request
+$input = file_get_contents('php://input');
+$data = json_decode($input, true);
 
-$firebase_uid = $conn->real_escape_string($data['firebase_uid']);
-$name = $conn->real_escape_string($data['name']);
-$email = $conn->real_escape_string($data['email']);
-$profile_picture = $conn->real_escape_string($data['profile_picture']);
+if (!$data || !isset($data['uid'], $data['name'], $data['email'])) {
+    echo json_encode(['success' => false, 'message' => 'Invalid input data']);
+    exit;
+}
 
-// Check if user already exists
-$checkQuery = "SELECT * FROM users WHERE firebase_uid = '$firebase_uid'";
-$result = $conn->query($checkQuery);
+$uid = $data['uid'];
+$name = $data['name'];
+$email = $data['email'];
+$picture = isset($data['picture']) ? $data['picture'] : null;
+$created = date('Y-m-d H:i:s');
+$modified = $created;
 
-if ($result->num_rows > 0) {
-    // User already exists, do nothing or update if you want
-    echo "success";
-} else {
-    // Insert new user
-    $insertQuery = "INSERT INTO users (firebase_uid, name, email, profile_picture) 
-                    VALUES ('$firebase_uid', '$name', '$email', '$profile_picture')";
-    if ($conn->query($insertQuery) === TRUE) {
-        echo "success";
+try {
+    // Check if user already exists
+    $stmt = $conn->prepare("SELECT id FROM users WHERE oauth_uid = :uid");
+    $stmt->execute(['uid' => $uid]);
+    $userExists = $stmt->fetch();
+
+    if ($userExists) {
+        // Update existing user
+        $stmt = $conn->prepare("UPDATE users SET name = :name, email = :email, picture = :picture, modified = :modified WHERE oauth_uid = :uid");
+        $stmt->execute([
+            'name' => $name,
+            'email' => $email,
+            'picture' => $picture,
+            'modified' => $modified,
+            'uid' => $uid
+        ]);
     } else {
-        echo "Error: " . $conn->error;
+        // Insert new user
+        $stmt = $conn->prepare("INSERT INTO users (oauth_provider, oauth_uid, name, email, picture, created, modified) 
+                                VALUES ('google', :uid, :name, :email, :picture, :created, :modified)");
+        $stmt->execute([
+            'uid' => $uid,
+            'name' => $name,
+            'email' => $email,
+            'picture' => $picture,
+            'created' => $created,
+            'modified' => $modified
+        ]);
     }
+    echo json_encode(['success' => true, 'message' => 'User data saved']);
+} catch(PDOException $e) {
+    echo json_encode(['success' => false, 'message' => 'Database error: ' . $e->getMessage()]);
 }
 
-$conn->close();
+$conn = null;
 ?>

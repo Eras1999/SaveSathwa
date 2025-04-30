@@ -724,5 +724,86 @@
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+     <!-- Firebase Authentication Script -->
+     <script type="module">
+        // Import Firebase functions
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js";
+        import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js";
+
+        // Your Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAgKho4fZwhtFI_3BQ6B9PGWZkeZx310pg",
+            authDomain: "save-sathwa.firebaseapp.com",
+            projectId: "save-sathwa",
+            storageBucket: "save-sathwa.firebasestorage.app",
+            messagingSenderId: "420315536794",
+            appId: "1:420315536794:web:69943066a5d5b28543ee23",
+            measurementId: "G-1G4G7X21B3"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+        const provider = new GoogleAuthProvider();
+
+        // Google Sign-In Button Event Listener
+        document.getElementById("google-signin-btn").addEventListener("click", function() {
+            signInWithPopup(auth, provider)
+                .then((result) => {
+                    // Get the signed-in user
+                    const user = result.user;
+                    console.log("User signed in:", user);
+
+                    // Prepare user data
+                    const userData = {
+                        uid: user.uid,
+                        name: user.displayName,
+                        email: user.email,
+                        picture: user.photoURL
+                    };
+
+                    // Send user data to PHP script
+                    fetch('save_user.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(userData)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert("Login successful! User data saved.");
+                            // Update session
+                            fetch('set_session.php', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify(userData)
+                            })
+                            .then(() => {
+                                // Redirect to profile or home
+                                window.location.href = 'profile.php';
+                            });
+                        } else {
+                            alert("Error saving user data: " + data.message);
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error saving user:", error);
+                        alert("Error saving user data.");
+                    });
+                })
+                .catch((error) => {
+                    console.error("Sign-in error:", error);
+                    alert("Error signing in: " + error.message);
+                });
+        });
+    </script>
 </body>
 </html>

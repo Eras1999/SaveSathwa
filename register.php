@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (isset($_SESSION['user_id'])) {
+    header("Location: index.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +14,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/logo5.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="firebase_config.js" defer></script>
     <style>
         * {
             margin: 0;
@@ -103,14 +113,17 @@
                 <span class="flex-1 border-b border-gray-200"></span>
             </div>
             <div class="social-login flex flex-col gap-3">
-                <a href="google_login.php" class="flex items-center justify-center p-3 border border-gray-200 rounded-md text-sm font-medium text-red-500 hover:bg-gray-100 transition duration-300">
-                    <i class="fab fa-google mr-2 text-lg"></i> Google
-                </a>
+                <button onclick="signInWithGoogle()" class="flex items-center justify-center p-3 border border-gray-200 rounded-md text-sm font-medium text-red-500 hover:bg-gray-100 transition duration-300">
+                    <i class="fab fa-google mr-2 text-lg"></i> Sign up with Google
+                </button>
             </div>
         </div>
         <div class="footer text-center p-4 border-t border-gray-200">
             <p class="text-sm">Already have an account? <a href="login.php" class="text-indigo-600 hover:underline">Sign In</a></p>
         </div>
     </div>
+    <script>
+        console.log('Signup page loaded successfully');
+    </script>
 </body>
 </html>
