@@ -7,12 +7,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+    $phone = filter_var($_POST['phone'] ?? '', FILTER_SANITIZE_STRING);
 
-    if (!empty($name) && !empty($email) && !empty($message)) {
+    if (!empty($name) && !empty($email) && !empty($message) && !empty($phone)) {
         try {
-            $stmt = $pdo->prepare("INSERT INTO contact_messages (name, email, message, created_at) VALUES (?, ?, ?, NOW())");
-            $stmt->execute([$name, $email, $message]);
-            $success = "Message sent successfully!";
+            $stmt = $pdo->prepare("INSERT INTO contact_messages (name, email, phone, message, created_at) VALUES (?, ?, ?, ?, NOW())");
+            $stmt->execute([$name, $email, $phone, $message]);
+            echo "<script>alert('Message sent successfully!'); window.location.href='contacts.php';</script>";
+            exit();
         } catch (PDOException $e) {
             $error = "Error: " . $e->getMessage();
         }
@@ -101,8 +103,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <p class="text-gray-600 mb-4">The domestic is a descendant of the wolf.</p>
                                 <?php if (isset($error)): ?>
                                     <p class="text-red-500 mb-4"><?php echo htmlspecialchars($error); ?></p>
-                                <?php elseif (isset($success)): ?>
-                                    <p class="text-green-500 mb-4"><?php echo htmlspecialchars($success); ?></p>
                                 <?php endif; ?>
                                 <form method="POST" action="" class="contact-form">
                                     <div class="form-grp">
@@ -112,6 +112,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <div class="form-grp">
                                         <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Your Email <span class="text-red-500">*</span></label>
                                         <input type="email" id="email" name="email" placeholder="info@example.com" required>
+                                    </div>
+                                    <div class="form-grp">
+                                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Your Phone <span class="text-red-500">*</span></label>
+                                        <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
                                     </div>
                                     <div class="form-grp">
                                         <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your Message <span class="text-red-500">*</span></label>
