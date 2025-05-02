@@ -89,11 +89,11 @@ $first_name = explode(' ', $user_name)[0];
                                                 <li><a href="breeder-details.html">Breeder Details</a></li>
                                             </ul>
                                         </li>
-                                        <li class="<?php echo ($current_page == 'blog.html') ? 'active' : ''; ?> menu-item-has-children">
-                                            <a href="blog.html">Blog</a>
+                                        <li class="<?php echo ($current_page == 'blog.php') ? 'active' : ''; ?> menu-item-has-children">
+                                            <a href="blog.php">Blog</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Our Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="blog.php">Our Blogs</a></li>
+                                                <li><a href="blog-details.php">Society Blogs</a></li>
                                             </ul>
                                         </li>
                                         <li class="<?php echo ($current_page == 'contacts.php') ? 'active' : ''; ?>">

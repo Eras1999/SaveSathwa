@@ -111,6 +111,7 @@ $active_tab = isset($_GET['tab']) ? $_GET['tab'] : 'users';
         <ul>
             <li><a href="?tab=users" class="<?php echo $active_tab === 'users' ? 'active' : ''; ?>"><i class="fas fa-users"></i> Users</a></li>
             <li><a href="?tab=contact_messages" class="<?php echo $active_tab === 'contact_messages' ? 'active' : ''; ?>"><i class="fas fa-envelope"></i> Contact Messages</a></li>
+            <li><a href="?tab=blogs" class="<?php echo $active_tab === 'blogs' ? 'active' : ''; ?>"><i class="fas fa-blog"></i> Blogs</a></li>
             <li><a href="logout.php" class="text-red-200 hover:bg-red-600"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
     </div>
@@ -130,6 +131,8 @@ $active_tab = isset($_GET['tab']) ? $_GET['tab'] : 'users';
                 include 'users.php';
             } elseif ($active_tab === 'contact_messages') {
                 include 'contact_messages.php';
+            } elseif ($active_tab === 'blogs') {
+                include 'blogs.php';
             }
             ?>
         </div>
