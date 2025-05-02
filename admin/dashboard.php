@@ -4,6 +4,8 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
     header("Location: login.php");
     exit();
 }
+
+$active_tab = isset($_GET['tab']) ? $_GET['tab'] : 'users';
 ?>
 
 <!DOCTYPE html>
@@ -107,7 +109,8 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
             <img src="../img/logo5.png" alt="SaveSathwa Logo">
         </div>
         <ul>
-            <li><a href="users.php" class="active"><i class="fas fa-users"></i> Users</a></li>
+            <li><a href="?tab=users" class="<?php echo $active_tab === 'users' ? 'active' : ''; ?>"><i class="fas fa-users"></i> Users</a></li>
+            <li><a href="?tab=contact_messages" class="<?php echo $active_tab === 'contact_messages' ? 'active' : ''; ?>"><i class="fas fa-envelope"></i> Contact Messages</a></li>
             <li><a href="logout.php" class="text-red-200 hover:bg-red-600"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
     </div>
@@ -122,7 +125,13 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
             <div class="text-gray-600">Welcome, Admin</div>
         </div>
         <div class="content">
-            <?php include 'users.php'; ?>
+            <?php
+            if ($active_tab === 'users') {
+                include 'users.php';
+            } elseif ($active_tab === 'contact_messages') {
+                include 'contact_messages.php';
+            }
+            ?>
         </div>
     </div>
     <script>

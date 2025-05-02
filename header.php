@@ -1,12 +1,18 @@
+<?php
+// session_start(); // Removed to avoid duplicate session_start
+$user_name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Guest';
+$first_name = explode(' ', $user_name)[0];
+?>
+
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SaveSathwa | AI-Powered Animal Rescue & Assistance Platform</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveSathwa</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo5.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -23,12 +29,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-    <div id="preloader">
-        <img src="img/preloader.gif" alt="">
-    </div>
-    <button class="scroll-top scroll-to-target" data-target="html">
-        <i class="fas fa-angle-up"></i>
-    </button>
     <header>
         <div class="header-top-area">
             <div class="container custom-container">
@@ -96,7 +96,7 @@
                                                 <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li>
-                                        <li class="<?php echo ($current_page == 'contact.html') ? 'active' : ''; ?>">
+                                        <li class="<?php echo ($current_page == 'contacts.php') ? 'active' : ''; ?>">
                                             <a href="contacts.php">Contacts</a>
                                         </li>
                                     </ul>
@@ -107,7 +107,7 @@
                                         <?php if (isset($_SESSION['user_id'])): ?>
                                             <li class="header-user">
                                                 <a href="profile.php" class="user-profile">
-                                                    <span class="user-name"><?php echo htmlspecialchars($_SESSION['user_name']); ?></span>
+                                                    <span class="user-name text-sm"><?php echo htmlspecialchars($first_name); ?></span>
                                                     <i class="fas fa-user-circle"></i>
                                                 </a>
                                             </li>
@@ -125,7 +125,7 @@
                                 <?php if (isset($_SESSION['user_id'])): ?>
                                     <div class="mobile-user-profile">
                                         <a href="profile.php" class="btn">
-                                            <span><?php echo htmlspecialchars($_SESSION['user_name']); ?></span>
+                                            <span class="text-sm"><?php echo htmlspecialchars($first_name); ?></span>
                                             <i class="fas fa-user-circle"></i>
                                         </a>
                                     </div>
@@ -171,4 +171,7 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+</body>
+</html>
