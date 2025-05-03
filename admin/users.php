@@ -14,8 +14,8 @@ try {
     <?php if (isset($error)): ?>
         <p class="text-red-500 mb-4"><?php echo htmlspecialchars($error); ?></p>
     <?php else: ?>
-        <div class="overflow-x-auto">
-            <table class="w-full border-collapse">
+        <div class="table-container">
+            <table>
                 <thead>
                     <tr class="bg-gray-100">
                         <th class="p-3 text-left text-sm font-medium text-gray-600 border-b">ID</th>
