@@ -1,0 +1,123 @@
+/* Terms and Conditions Area */
+.terms-conditions-area {
+    padding: 120px 0;
+    background-color: #f9f9f9;
+}
+
+.terms-conditions-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.last-updated {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.terms-conditions-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.terms-item {
+    margin-bottom: 40px;
+}
+
+.terms-item h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.terms-item ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.terms-item ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.terms-item ul li strong {
+    color: #2c3e50;
+}
+
+.back-to-top {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-to-top .btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top .btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terms-conditions-area {
+        padding: 80px 0;
+    }
+
+    .terms-conditions-content {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .terms-item h4 {
+        font-size: 20px;
+    }
+
+    .terms-conditions-content p,
+    .terms-item ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .terms-conditions-content {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .terms-item h4 {
+        font-size: 18px;
+    }
+
+    .back-to-top .btn-primary {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
