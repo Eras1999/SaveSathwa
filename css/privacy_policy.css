@@ -1,0 +1,123 @@
+/* Privacy Policy Area */
+.privacy-policy-area {
+    padding: 120px 0;
+    background-color: #f9f9f9;
+}
+
+.privacy-policy-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.last-updated {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.privacy-policy-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.policy-item {
+    margin-bottom: 40px;
+}
+
+.policy-item h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.policy-item ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.policy-item ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.policy-item ul li strong {
+    color: #2c3e50;
+}
+
+.back-to-top {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-to-top .btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top .btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-policy-area {
+        padding: 80px 0;
+    }
+
+    .privacy-policy-content {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .policy-item h4 {
+        font-size: 20px;
+    }
+
+    .privacy-policy-content p,
+    .policy-item ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .privacy-policy-content {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .policy-item h4 {
+        font-size: 18px;
+    }
+
+    .back-to-top .btn-primary {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
