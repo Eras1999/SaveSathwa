@@ -33,13 +33,13 @@
                                 <h4 class="fw-title">Our Policies</h4>
                                 <div class="fw-link">
                                     <ul>
-                                        <li><a href="contact.html">Privacy Policy</a></li>
-                                        <li><a href="contact.html">Terms and Conditions</a></li>
+                                        <li><a href="privacy_policy.php">Privacy Policy</a></li>
+                                        <li><a href="terms_conditions.php">Terms and Conditions</a></li>
                                         <li><a href="contact.html">Editorial Policy</a></li>
                                         <li><a href="contact.html">Return Policy</a></li>
                                         <li><a href="contact.html">IP Policy</a></li>
-                                        <li><a href="contact.html">Grievance Redressal Policy</a></li>
-                                        <li><a href="contact.html">FAQ</a></li>
+                                        <li><a href="what_we_do.php">What We Do</a></li>
+                                        <li><a href="faq.php">FAQ</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                                         <li><a href="contact.html">Return Policy</a></li>
                                         <li><a href="contact.html">Grievance Policy</a></li>
                                         <li><a href="contact.html">Redressal Policy</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="contacts.php">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
